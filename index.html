@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Royal Marines Rifle Association</title>
-
-<style>
-
 *{
 margin:0;
 padding:0;
@@ -26,16 +16,34 @@ background-image:url('IMG_9181.png');
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
+min-height:750px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 color:white;
 text-align:center;
-padding:120px 20px;
+padding:40px 20px;
 position:relative;
 }
 
+header::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(0,0,0,0.55);
+}
+
+header *{
+position:relative;
+z-index:1;
 }
 
 .logo{
-max-width:180px;
+max-width:260px;
 width:100%;
 height:auto;
 margin-bottom:20px;
@@ -43,19 +51,22 @@ margin-bottom:20px;
 
 header h1{
 font-size:3rem;
-margin-bottom:10px;
+margin-bottom:15px;
+text-shadow:2px 2px 10px rgba(0,0,0,0.8);
 }
 
 .motto{
 color:#d4af37;
-font-size:1.25rem;
+font-size:1.5rem;
 font-weight:bold;
-margin-bottom:15px;
+margin-bottom:20px;
+text-shadow:2px 2px 10px rgba(0,0,0,0.8);
 }
 
 .tagline{
-font-size:1.2rem;
-opacity:0.95;
+font-size:1.4rem;
+max-width:800px;
+text-shadow:2px 2px 10px rgba(0,0,0,0.8);
 }
 
 nav{
@@ -142,11 +153,6 @@ color:#002b5c;
 margin-bottom:15px;
 }
 
-.news-item{
-padding:8px 0;
-border-bottom:1px solid #ddd;
-}
-
 footer{
 background:#111;
 color:white;
@@ -161,6 +167,10 @@ color:#d4af37;
 
 @media(max-width:700px){
 
+header{
+min-height:600px;
+}
+
 header h1{
 font-size:2rem;
 }
@@ -172,189 +182,3 @@ margin:5px 0;
 }
 
 }
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<img src="IMG_8551.png" class="logo">
-
-<h1>Royal Marines Rifle Association</h1>
-
-<p class="motto">Per Mare Per Terram</p>
-
-<p class="tagline">
-Promoting marksmanship across the Royal Marines community
-</p>
-
-</header>
-
-<nav>
-aboutAbout</a>
-eventsEvents</a>
-membershipMembership</a>
-resultsResults</a>
-membersMembers Area</a>
-contactContact</a>
-</nav>
-
-<div class="container">
-
-<div class="hero">
-
-<h2>Competition • Coaching • Marksmanship</h2>
-
-<p>
-The Royal Marines Rifle Association supports competitive shooting,
-coaching, training, competition and the preservation of Royal Marines
-shooting heritage for serving personnel, veterans and supporters of
-the Corps.
-</p>
-
-<br>
-
-membershipJoin RMRA</a>
-eventsUpcoming Events</a>
-resultsLatest Results</a>
-
-</div>
-
-<div class="section">
-
-<h2>Latest News</h2>
-
-<div class="news-item">
-RMRA website launched.
-</div>
-
-<div class="news-item">
-Membership enquiries open.
-</div>
-
-<div class="news-item">
-2027 fixture list currently being prepared.
-</div>
-
-</div>
-
-<div class="cards">
-
-<div class="card">
-<h3>Competition</h3>
-<p>
-RMRA competitions, Corps championships and Bisley fixtures.
-</p>
-</div>
-
-<div class="card">
-<h3>Coaching</h3>
-<p>
-Training and development opportunities for shooters of all levels.
-</p>
-</div>
-
-<div class="card">
-<h3>Heritage</h3>
-<p>
-Preserving and promoting the traditions of Royal Marines marksmanship.
-</p>
-</div>
-
-</div>
-
-<div class="section" id="about">
-
-<h2>About RMRA</h2>
-
-<p>
-The Royal Marines Rifle Association exists to encourage excellence in
-shooting, support competition and coaching, and preserve the traditions
-and heritage of Royal Marines marksmanship.
-</p>
-
-</div>
-
-<div class="section" id="events">
-
-<h2>Events</h2>
-
-<ul>
-<li>RMRA Spring Meeting</li>
-<li>Corps Championships</li>
-<li>Bisley Competitions</li>
-<li>Coaching Weekends</li>
-</ul>
-
-</div>
-
-<div class="section" id="membership">
-
-<h2>Membership</h2>
-
-<p>
-Membership benefits, joining instructions and subscription
-information will be published here.
-</p>
-
-</div>
-
-<div class="section" id="results">
-
-<h2>Results</h2>
-
-<p>
-Competition results, records and match reports will be available here.
-</p>
-
-</div>
-
-<div class="section" id="members">
-
-<h2>Members Area</h2>
-
-<ul>
-<li>Committee Minutes</li>
-<li>Competition Entry Forms</li>
-<li>Newsletters</li>
-<li>Fixture Lists</li>
-<li>Coaching Resources</li>
-</ul>
-
-</div>
-
-<div class="section" id="contact">
-
-<h2>Contact</h2>
-
-<p>
-<b>Secretary</b><br>
-Royal Marines Rifle Association
-</p>
-
-<br>
-
-<p>
-Website: rmra.org.uk
-</p>
-
-</div>
-
-</div>
-
-<footer>
-
-<p class="gold">
-Royal Marines Rifle Association
-</p>
-
-<p>
-Per Mare Per Terram
-</p>
-
-</footer>
-
-</body>
-</html>
