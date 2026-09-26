@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Marines Rifle Association</title>
+
+<style>
+
 *{
 margin:0;
 padding:0;
@@ -5,10 +14,9 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
+font-family:Arial, sans-serif;
 background:#f4f4f4;
 color:#222;
-line-height:1.6;
 }
 
 header{
@@ -16,15 +24,15 @@ background-image:url('IMG_9181.png');
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
-min-height:750px;
+min-height:700px;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-color:white;
 text-align:center;
 padding:40px 20px;
 position:relative;
+color:white;
 }
 
 header::before{
@@ -34,7 +42,7 @@ top:0;
 left:0;
 right:0;
 bottom:0;
-background:rgba(0,0,0,0.55);
+background:rgba(0,0,0,0.6);
 }
 
 header *{
@@ -43,16 +51,14 @@ z-index:1;
 }
 
 .logo{
-max-width:140px;
-width:auto;
+width:180px;
 height:auto;
 margin-bottom:20px;
 }
 
-header h1{
+h1{
 font-size:3rem;
-margin-bottom:15px;
-text-shadow:2px 2px 10px rgba(0,0,0,0.8);
+margin-bottom:10px;
 }
 
 .motto{
@@ -60,13 +66,11 @@ color:#d4af37;
 font-size:1.5rem;
 font-weight:bold;
 margin-bottom:20px;
-text-shadow:2px 2px 10px rgba(0,0,0,0.8);
 }
 
 .tagline{
-font-size:1.4rem;
-max-width:800px;
-text-shadow:2px 2px 10px rgba(0,0,0,0.8);
+font-size:1.2rem;
+max-width:700px;
 }
 
 nav{
@@ -78,107 +82,92 @@ text-align:center;
 nav a{
 color:white;
 text-decoration:none;
-margin:0 12px;
+margin:0 10px;
 font-weight:bold;
 }
 
-nav a:hover{
-color:#d4af37;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:25px;
-}
-
-.hero{
-background:white;
-padding:35px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-margin-bottom:30px;
-}
-
-.hero h2{
-color:#002b5c;
-margin-bottom:15px;
-}
-
-.button{
-display:inline-block;
-margin:8px;
-padding:12px 24px;
-background:#002b5c;
-color:white;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-}
-
-.button:hover{
-background:#00183a;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.card{
+section{
+max-width:1000px;
+margin:20px auto;
 background:white;
 padding:25px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.card h3{
-color:#002b5c;
-margin-bottom:10px;
-}
-
-.section{
-background:white;
-padding:30px;
-margin-top:30px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.section h2{
-color:#002b5c;
-margin-bottom:15px;
+border-radius:8px;
 }
 
 footer{
 background:#111;
 color:white;
 text-align:center;
-padding:30px;
-margin-top:40px;
+padding:20px;
+margin-top:20px;
 }
 
-.gold{
-color:#d4af37;
-}
+</style>
+</head>
 
-@media(max-width:700px){
+<body>
 
-header{
-min-height:600px;
-}
+<header>
 
-header h1{
-font-size:2rem;
-}
+IMG_8551.png
 
-nav a{
-display:block;
-padding:5px;
-margin:5px 0;
-}
+<h1>Royal Marines Rifle Association</h1>
 
-}
+<p class="motto">Per Mare Per Terram</p>
+
+<p class="tagline">
+Promoting marksmanship across the Royal Marines community
+</p>
+
+</header>
+
+<nav>
+#aboutAbout</a>
+#eventsEvents</a>
+#membershipMembership</a>
+#resultsResults</a>
+#contactContact</a>
+</nav>
+
+<section id="about">
+<h2>About RMRA</h2>
+<p>
+The Royal Marines Rifle Association promotes marksmanship,
+competition, coaching and shooting heritage across the Royal Marines community.
+</p>
+</section>
+
+<section id="events">
+<h2>Events</h2>
+<p>
+Upcoming competitions, coaching weekends and association events.
+</p>
+</section>
+
+<section id="membership">
+<h2>Membership</h2>
+<p>
+Membership information and joining instructions will be published here.
+</p>
+</section>
+
+<section id="results">
+<h2>Results</h2>
+<p>
+Competition results and records will be available here.
+</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>
+Website: rmra.org.uk
+</p>
+</section>
+
+<footer>
+Royal Marines Rifle Association
+</footer>
+
+</body>
+</html>
